@@ -1,0 +1,379 @@
+# CAHIER DES CHARGES ET RAPPORT DU PROJET REAL ESTATE
+
+## I. CAHIER DE CHARGE
+
+### 1. Contexte du projet
+
+Le projet "Real Estate" s'inscrit dans un contexte immobilier en pleine évolution numérique. Face à la digitalisation croissante du secteur immobilier, les agences traditionnelles doivent s'adapter pour rester compétitives. Ce projet vise à développer une plateforme web complète pour une agence immobilière, permettant de gérer l'ensemble de ses activités en ligne.
+
+L'agence immobilière souhaite moderniser son approche commerciale en proposant à ses clients une expérience utilisateur fluide et intuitive pour la recherche et la réservation de biens immobiliers. Elle souhaite également optimiser la gestion interne de ses propriétés, clients et réservations via un système d'administration efficace.
+
+Le marché immobilier actuel est caractérisé par une forte concurrence et une clientèle de plus en plus exigeante en termes d'expérience digitale. Les acheteurs et locataires potentiels s'attendent à pouvoir consulter des informations détaillées sur les biens, visualiser des photos de qualité, et effectuer des démarches en ligne sans avoir à se déplacer systématiquement en agence.
+
+### 2. Objectifs du projet
+
+Le projet "Real Estate" poursuit plusieurs objectifs stratégiques et opérationnels :
+
+**Objectifs stratégiques :**
+- Renforcer la présence en ligne de l'agence immobilière
+- Augmenter la visibilité du portefeuille de biens immobiliers
+- Améliorer l'expérience client et la satisfaction des utilisateurs
+- Optimiser le processus de vente et de location des biens
+- Se démarquer de la concurrence par une plateforme moderne et fonctionnelle
+
+**Objectifs opérationnels :**
+- Développer une plateforme web responsive accessible sur tous les appareils
+- Créer un catalogue en ligne des propriétés disponibles avec filtres de recherche avancés
+- Mettre en place un système de réservation de visites en ligne
+- Implémenter un espace client personnalisé pour suivre les demandes et réservations
+- Concevoir un tableau de bord administratif complet pour la gestion des biens, clients et réservations
+- Intégrer un système de messagerie interne entre clients et agents immobiliers
+- Assurer la sécurité des données personnelles des utilisateurs
+
+**Indicateurs de réussite :**
+- Nombre de visites sur le site web
+- Taux de conversion des visiteurs en demandes de réservation
+- Nombre de réservations effectuées via la plateforme
+- Temps moyen passé sur le site par les utilisateurs
+- Satisfaction client mesurée par des enquêtes post-visite
+
+### 3. Identification des parties prenantes
+
+**Parties prenantes internes :**
+- **Direction de l'agence immobilière :** Définit la stratégie globale et valide les grandes orientations du projet.
+- **Agents immobiliers :** Utilisateurs principaux du système d'administration, ils gèrent les propriétés, les réservations et les relations clients.
+- **Service marketing :** Responsable de la promotion de la plateforme et de l'analyse des performances.
+- **Service informatique :** Assure la maintenance technique et la sécurité de la plateforme.
+
+**Parties prenantes externes :**
+- **Clients potentiels (acheteurs/locataires) :** Utilisateurs principaux du site public, recherchent et réservent des visites de biens.
+- **Propriétaires vendeurs/bailleurs :** Fournissent les biens à commercialiser et attendent un service efficace.
+- **Prestataires techniques :** Hébergeur web, fournisseurs de services tiers (cartographie, paiement en ligne, etc.).
+- **Organismes réglementaires :** Veillent au respect des normes juridiques (RGPD, lois immobilières).
+
+**Matrice d'influence/intérêt :**
+- **Forte influence, fort intérêt :** Direction de l'agence, agents immobiliers
+- **Forte influence, intérêt modéré :** Service informatique, organismes réglementaires
+- **Influence modérée, fort intérêt :** Clients potentiels, propriétaires
+- **Influence modérée, intérêt modéré :** Service marketing, prestataires techniques
+
+### 4. Délimitation du système
+
+#### a. Besoins fonctionnels
+
+**Interface publique :**
+- **Catalogue de propriétés :** Affichage des biens disponibles avec photos, descriptions détaillées et caractéristiques.
+- **Système de recherche avancée :** Filtrage des propriétés par type, localisation, prix, superficie, nombre de pièces, etc.
+- **Fiche détaillée de propriété :** Présentation complète d'un bien avec galerie photos, plan, localisation sur carte, et propriétés similaires.
+- **Réservation de visite :** Formulaire permettant aux utilisateurs connectés de réserver une visite pour un bien spécifique.
+- **Inscription et connexion :** Création de compte utilisateur et authentification sécurisée.
+- **Espace client :** Interface personnalisée permettant aux clients de gérer leur profil, suivre leurs réservations et communiquer avec l'agence.
+- **Messagerie :** Système de contact permettant aux clients d'envoyer des messages à l'agence concernant des biens spécifiques.
+
+**Interface d'administration :**
+- **Tableau de bord :** Vue d'ensemble des statistiques clés (propriétés, réservations, messages).
+- **Gestion des propriétés :** Ajout, modification, suppression et publication de biens immobiliers.
+- **Gestion des réservations :** Suivi et traitement des demandes de visite.
+- **Gestion des utilisateurs :** Administration des comptes clients et agents.
+- **Gestion des messages :** Interface de réception et de réponse aux messages des clients.
+- **Gestion des catégories et caractéristiques :** Administration des types de biens et de leurs caractéristiques.
+- **Rapports et statistiques :** Génération de rapports sur l'activité de l'agence.
+
+#### b. Besoins non fonctionnels
+
+**Performance :**
+- Temps de chargement des pages inférieur à 3 secondes
+- Capacité à gérer simultanément au moins 100 utilisateurs
+- Disponibilité du service 24/7 avec un taux de disponibilité de 99,5%
+
+**Sécurité :**
+- Protection des données personnelles conformément au RGPD
+- Authentification sécurisée avec mots de passe hachés
+- Protection contre les attaques web courantes (XSS, CSRF, injection SQL)
+- Sauvegarde quotidienne des données
+
+**Utilisabilité :**
+- Interface intuitive et conviviale
+- Design responsive adapté à tous les appareils (desktop, tablette, mobile)
+- Accessibilité conforme aux normes WCAG 2.1 niveau AA
+- Support multilingue (français, anglais)
+
+**Maintenabilité :**
+- Code modulaire et bien documenté
+- Utilisation de frameworks et bibliothèques standards
+- Séparation claire entre la logique métier et la présentation
+- Versionnage du code source
+
+**Évolutivité :**
+- Architecture permettant l'ajout de nouvelles fonctionnalités
+- Capacité à s'intégrer avec des services tiers (API)
+- Possibilité d'augmenter la capacité du système sans refonte majeure
+
+### 5. Évaluation de la faisabilité
+
+#### a. Faisabilité des ressources
+
+**Ressources humaines :**
+- Développeur web full-stack : Conception et développement de l'application
+- Designer UI/UX : Création de l'interface utilisateur et de l'expérience utilisateur
+- Chef de projet : Coordination et suivi du projet
+- Testeur : Validation fonctionnelle et non fonctionnelle
+
+**Ressources matérielles :**
+- Serveur d'hébergement web avec PHP et MySQL
+- Environnements de développement, test et production
+- Outils de développement et de gestion de projet
+
+**Ressources financières :**
+- Budget de développement : Couvre les coûts de main-d'œuvre, d'infrastructure et de licences
+- Budget de maintenance : Assure le fonctionnement continu et les mises à jour
+- Budget marketing : Promotion de la plateforme après son lancement
+
+L'évaluation des ressources indique que le projet est réalisable avec les moyens disponibles, à condition de respecter le calendrier et le budget alloués.
+
+#### b. Faisabilité technologique
+
+**Technologies retenues :**
+- **Frontend :** HTML5, CSS3, JavaScript, Bootstrap 5
+- **Backend :** PHP 8, MySQL
+- **Environnement :** Serveur Apache, XAMPP pour le développement
+- **Outils complémentaires :** Git pour le versionnage, PHPMyAdmin pour la gestion de base de données
+
+**Avantages technologiques :**
+- Technologies éprouvées et largement documentées
+- Faible courbe d'apprentissage pour l'équipe de développement
+- Large communauté de support
+- Coût de développement et de maintenance raisonnable
+- Facilité d'hébergement
+
+**Limites technologiques :**
+- Performance limitée par rapport à des frameworks plus modernes
+- Nécessité de développer manuellement certaines fonctionnalités disponibles nativement dans des CMS
+- Évolutivité à long terme potentiellement plus complexe
+
+L'analyse technologique confirme la faisabilité du projet avec les technologies choisies, qui offrent un bon équilibre entre performance, coût et facilité de développement.
+
+#### c. Faisabilité opérationnelle
+
+**Intégration dans l'organisation :**
+- Formation des agents immobiliers à l'utilisation du système
+- Mise en place progressive avec une période de transition
+- Support technique disponible pendant les heures de bureau
+
+**Acceptation par les utilisateurs :**
+- Interface intuitive réduisant la résistance au changement
+- Bénéfices clairs pour les utilisateurs (gain de temps, meilleure visibilité)
+- Implication des utilisateurs finaux dans la phase de test
+
+**Conformité légale :**
+- Respect des réglementations immobilières en vigueur
+- Conformité RGPD pour la protection des données personnelles
+- Mentions légales et conditions d'utilisation transparentes
+
+L'évaluation opérationnelle indique que le système peut être intégré efficacement dans les processus existants de l'agence, avec une acceptation favorable des utilisateurs grâce aux avantages apportés.
+
+### 6. Évaluation des risques
+
+#### a. Identification des risques
+
+**Risques techniques :**
+- RT1 : Problèmes de compatibilité avec certains navigateurs ou appareils
+- RT2 : Failles de sécurité potentielles
+- RT3 : Performance insuffisante en cas de forte affluence
+- RT4 : Problèmes d'intégration avec des services tiers
+
+**Risques organisationnels :**
+- RO1 : Résistance au changement de la part des agents immobiliers
+- RO2 : Manque de ressources pour la maintenance à long terme
+- RO3 : Retards dans le calendrier de développement
+- RO4 : Communication insuffisante entre les parties prenantes
+
+**Risques externes :**
+- RE1 : Évolution des réglementations nécessitant des modifications
+- RE2 : Nouvelles attentes des utilisateurs non prévues initialement
+- RE3 : Actions de la concurrence rendant certaines fonctionnalités obsolètes
+- RE4 : Problèmes avec les fournisseurs de services tiers
+
+#### b. Évaluation des risques
+
+| ID | Risque | Probabilité (1-5) | Impact (1-5) | Criticité (P×I) |
+|----|--------|-------------------|--------------|-----------------|
+| RT1 | Problèmes de compatibilité | 3 | 4 | 12 |
+| RT2 | Failles de sécurité | 2 | 5 | 10 |
+| RT3 | Performance insuffisante | 2 | 4 | 8 |
+| RT4 | Problèmes d'intégration | 3 | 3 | 9 |
+| RO1 | Résistance au changement | 4 | 3 | 12 |
+| RO2 | Manque de ressources | 3 | 4 | 12 |
+| RO3 | Retards de développement | 4 | 3 | 12 |
+| RO4 | Communication insuffisante | 3 | 3 | 9 |
+| RE1 | Évolution des réglementations | 2 | 4 | 8 |
+| RE2 | Nouvelles attentes utilisateurs | 3 | 3 | 9 |
+| RE3 | Actions de la concurrence | 2 | 2 | 4 |
+| RE4 | Problèmes avec fournisseurs | 2 | 4 | 8 |
+
+#### c. Traitement des risques
+
+**Risques à criticité élevée (≥ 12) :**
+
+**RT1 : Problèmes de compatibilité**
+- *Stratégie :* Atténuation
+- *Actions :* Tests sur différents navigateurs et appareils, utilisation de frameworks responsives, mise en place d'une détection de navigateur avec recommandations.
+
+**RO1 : Résistance au changement**
+- *Stratégie :* Atténuation
+- *Actions :* Formation approfondie des agents, démonstration des avantages, période de transition avec support renforcé, recueil de feedback pour amélioration continue.
+
+**RO2 : Manque de ressources pour la maintenance**
+- *Stratégie :* Prévention
+- *Actions :* Documentation complète du code, formation croisée des développeurs, budgétisation adéquate de la maintenance, contrat de support avec prestataire.
+
+**RO3 : Retards dans le calendrier**
+- *Stratégie :* Atténuation
+- *Actions :* Méthodologie agile avec sprints courts, priorisation des fonctionnalités essentielles, marge de sécurité dans le planning, revues régulières d'avancement.
+
+**Risques à criticité moyenne (8-11) :**
+- Mise en place de mesures préventives et plans de contingence
+- Surveillance régulière et réévaluation
+
+**Risques à criticité faible (< 8) :**
+- Acceptation avec surveillance
+
+## II. ANALYSE ET CONCEPTION
+
+### 1. Vue statique du système
+
+#### Diagramme de cas d'utilisation
+
+**Acteurs principaux :**
+- Visiteur (non authentifié)
+- Client (authentifié)
+- Agent immobilier
+- Administrateur système
+
+**Cas d'utilisation principaux :**
+
+*Visiteur :*
+- Consulter le catalogue de propriétés
+- Rechercher des propriétés avec filtres
+- Voir les détails d'une propriété
+- Créer un compte
+- Se connecter
+
+*Client :*
+- Tous les cas d'utilisation du Visiteur
+- Réserver une visite
+- Gérer son profil
+- Consulter l'historique de ses réservations
+- Envoyer des messages à l'agence
+
+*Agent immobilier :*
+- Se connecter à l'interface d'administration
+- Gérer les propriétés (CRUD)
+- Traiter les réservations
+- Répondre aux messages des clients
+- Consulter les statistiques basiques
+
+*Administrateur système :*
+- Tous les cas d'utilisation de l'Agent immobilier
+- Gérer les utilisateurs (CRUD)
+- Gérer les catégories et caractéristiques
+- Configurer les paramètres du système
+- Consulter les statistiques avancées
+
+#### Diagramme de classes
+
+**Classes principales :**
+
+*User :*
+- Attributs : id, nom, prenom, email, password, telephone, role, date_inscription
+- Méthodes : authenticate(), updateProfile(), resetPassword()
+
+*Propriete :*
+- Attributs : id, titre, description, prix, adresse, ville, code_postal, superficie, nb_chambres, nb_salles_bain, annee_construction, disponibilite, id_categorie, date_publication
+- Méthodes : create(), update(), delete(), getImages(), getCaracteristiques()
+
+*Categorie :*
+- Attributs : id, nom, description
+- Méthodes : create(), update(), delete(), getProprietes()
+
+*Caracteristique :*
+- Attributs : id, nom
+- Méthodes : create(), update(), delete()
+
+*ProprieteCaracteristique (association) :*
+- Attributs : id_propriete, id_caracteristique
+- Méthodes : assign(), remove()
+
+*ImagePropriete :*
+- Attributs : id, id_propriete, url_image, est_principale, ordre
+- Méthodes : upload(), delete(), setPrincipal()
+
+*Reservation :*
+- Attributs : id, id_propriete, id_client, date_visite, commentaire, statut, date_reservation
+- Méthodes : create(), update(), cancel(), approve()
+
+*Message :*
+- Attributs : id, id_expediteur, sujet, contenu, date_envoi, lu
+- Méthodes : send(), markAsRead(), reply()
+
+**Relations :**
+- Un User peut avoir plusieurs Reservation (1..*)
+- Une Propriete peut avoir plusieurs Reservation (1..*)
+- Une Propriete appartient à une Categorie (1..1)
+- Une Propriete peut avoir plusieurs Caracteristique (*..*) via ProprieteCaracteristique
+- Une Propriete peut avoir plusieurs ImagePropriete (1..*)
+- Un User peut envoyer plusieurs Message (1..*)
+
+### 2. Vue dynamique ou comportementale
+
+#### Diagramme de séquence : Réservation d'une visite
+
+**Acteurs :** Client, Système, Agent immobilier
+
+**Flux principal :**
+1. Le Client consulte la fiche détaillée d'une propriété
+2. Le Client clique sur "Réserver une visite"
+3. Le Système vérifie si le Client est connecté
+   a. Si non connecté, redirection vers la page de connexion
+   b. Après connexion, retour à la page de propriété
+4. Le Système affiche le formulaire de réservation
+5. Le Client saisit la date/heure souhaitée et un commentaire optionnel
+6. Le Client soumet le formulaire
+7. Le Système valide les données (date future, disponibilité)
+8. Le Système enregistre la réservation en statut "En attente"
+9. Le Système envoie une notification à l'Agent immobilier
+10. Le Système confirme la réservation au Client
+11. L'Agent immobilier consulte la réservation dans son tableau de bord
+12. L'Agent immobilier approuve ou refuse la réservation
+13. Le Système met à jour le statut de la réservation
+14. Le Système notifie le Client de la décision
+
+**Flux alternatifs :**
+- Si les données sont invalides, le Système affiche un message d'erreur et demande une correction
+- Si la propriété n'est plus disponible, le Système informe le Client et propose des alternatives
+- Si l'Agent immobilier ne répond pas dans un délai défini, le Système envoie un rappel
+
+#### Diagramme de séquence : Ajout d'une nouvelle propriété
+
+**Acteurs :** Agent immobilier, Système
+
+**Flux principal :**
+1. L'Agent immobilier se connecte à l'interface d'administration
+2. L'Agent immobilier accède à la section "Propriétés"
+3. L'Agent immobilier clique sur "Ajouter une propriété"
+4. Le Système affiche le formulaire d'ajout
+5. L'Agent immobilier saisit les informations de base (titre, description, prix, etc.)
+6. L'Agent immobilier sélectionne la catégorie et les caractéristiques
+7. L'Agent immobilier télécharge les images de la propriété
+8. L'Agent immobilier définit l'image principale
+9. L'Agent immobilier soumet le formulaire
+10. Le Système valide les données
+11. Le Système enregistre la propriété et ses relations
+12. Le Système confirme l'ajout et redirige vers la liste des propriétés
+
+**Flux alternatifs :**
+- Si les données sont invalides, le Système affiche les erreurs à corriger
+- Si le téléchargement d'image échoue, le Système propose de réessayer
+- L'Agent immobilier peut enregistrer un brouillon pour compléter ultérieurement
+
+Ce document présente une analyse détaillée du projet "Real Estate", couvrant à la fois les aspects fonctionnels, techniques et organisationnels. Il servira de référence tout au long du cycle de développement et permettra d'assurer l'alignement entre les attentes des parties prenantes et la solution livrée.
