@@ -38,7 +38,7 @@ Cette application web permet à une agence immobilière de présenter son catalo
 1. **Cloner ou télécharger le projet** dans le répertoire `htdocs` de XAMPP :
    ```
    cd C:/xampp/htdocs/
-   git clone [URL_DU_REPO] fred
+   git clone https://github.com/sime65123/Agence-immobiliere.git
    ```
    Ou décompressez l'archive du projet dans `C:/xampp/htdocs/fred/`
 
